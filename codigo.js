@@ -34,7 +34,7 @@ function calcularCalor() {
   const Q = masa * c * deltaT;
   const nombreElemento = elemento ? ` del ${elemento.charAt(0).toUpperCase() + elemento.slice(1)}` : "";
 
-  const mensaje = `El calor transferido es: ${Q.toFixed(2)} J (julios). 
+  const mensaje = `El calor transferido es: ${Q.toFixed(2)} J (jules). 
   Esto se calculó usando la fórmula Q = m·c·ΔT, donde:
   m = ${masa} kg, 
   c = ${c} J/kg·°C, 
