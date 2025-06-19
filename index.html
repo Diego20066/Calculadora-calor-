@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Calor</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h2>Calculadora de Calor</h2>
+
+  <label for="elemento">Selecciona un elemento:</label>
+  <select id="elemento" onchange="actualizarCalorEspecifico()">
+    <option value="">-- Selecciona --</option>
+    <option value="aluminio">Aluminio</option>
+    <option value="agua">Agua</option>
+    <option value="hierro">Hierro</option>
+    <option value="cobre">Cobre</option>
+    <option value="plomo">Plomo</option>
+    <option value="oro">Oro</option>
+    <option value="plata">Plata</option>
+    <option value="mercurio">Mercurio</option>
+    <option value="vidrio">Vidrio</option>
+    <option value="aceite">Aceite vegetal</option>
+  </select>
+
+  <label for="masa">Masa (kg):</label>
+  <input type="number" id="masa" placeholder="Ej: 2.5">
+
+  <label for="calorEspecifico">Calor específico (J/kg·°C):</label>
+  <input type="number" id="calorEspecifico" placeholder="Ej: 4186 para agua">
+
+  <label for="deltaT">Cambio de temperatura (°C):</label>
+  <input type="number" id="deltaT" placeholder="Ej: 10">
+
+  <button onclick="calcularCalor()">Calcular Calor</button>
+
+  <div id="resultado"></div>
+
+  <script src="./codigo.js"></script>
+</body>
+</html>
